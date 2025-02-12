@@ -40,7 +40,7 @@ def query_api(x):
 
     headers = {'Content-Type': 'application/json'}
 
-    response = requests.post('http://localhost:6863/predict', json={'data': x.tolist()}, headers=headers)
+    response = requests.post('http://localhost:xxxx/predict', json={'data': x.tolist()}, headers=headers)
     predictions = np.array(response.json()['predictions'])  # Convert response to NumPy array
     print("predictions: \n", predictions)
 
